@@ -1,0 +1,50 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: ingestion-job
+  labels:
+    pipeline-stage: ingestion
+    experiment: RUN_LABEL
+spec:
+  ttlSecondsAfterFinished: 60
+  template:
+    metadata:
+      labels:
+        pipeline-stage: ingestion
+        experiment: RUN_LABEL
+    spec:
+      containers:
+      - name: worker
+        image: 10.2.0.145:32000/etl-pipeline:latest
+        imagePullPolicy: IfNotPresent
+        command: ["/bin/sh","-c"]
+        args:
+        - "python3 /script/stage.py"
+        env:
+        - name: PIPELINE_STAGE
+          value: "ingestion"
+        - name: INTENSITY
+          value: "800"
+        - name: AWS_ENDPOINT_URL
+          value: "http://localstack.default.svc.cluster.local:4566"
+        - name: AWS_DEFAULT_REGION
+          value: "us-east-1"
+        - name: AWS_ACCESS_KEY_ID
+          value: "test"
+        - name: AWS_SECRET_ACCESS_KEY
+          value: "test"
+        resources:
+          requests:
+            cpu: "250m"
+            memory: "256Mi"
+          limits:
+            cpu: "500m"
+            memory: "512Mi"
+        volumeMounts:
+        - name: script
+          mountPath: /script
+      volumes:
+      - name: script
+        configMap:
+          name: stage-script
+      restartPolicy: Never

@@ -1,0 +1,101 @@
+egovernments/DIGIT-DevOps/deploy-as-code/helm/charts/backbone-services/vpa/templates/admission-controller-certgen.yaml: HTTP 404
+egovernments/DIGIT-DevOps/deploy-as-code/helm/charts/backbone-services/metrics-server/templates/metrics-server-serviceaccount.yaml: HTTP 404
+egovernments/DIGIT-DevOps/deploy-as-code/helm/charts/backbone-services/elasticsearch/templates/service.yaml: HTTP 404
+egovernments/DIGIT-DevOps/deploy-as-code/helm/charts/backbone-services/kube-state-metrics/templates/clusterrolebinding.yaml: HTTP 404
+tkestack/charts/incubator/adp/charts/vector-db-manager/templates/service.yaml: HTTP 404
+bcgov/nr-bcwat/airflow/pod_templates/openshift/tiny_task_template.yaml: HTTP 404
+bcgov/nr-bcwat/charts/openshift/app/templates/backend/templates/pdb.yaml: HTTP 404
+bcgov/nr-bcwat/airflow/pod_templates/okd/largest_task_template.yaml: HTTP 404
+bcgov/nr-bcwat/airflow/pod_templates/openshift/largest_task_template.yaml: HTTP 404
+knowledgesystems/knowledgesystems-k8s-deployment/argocd/aws/203403084713/clusters/cbioportal-prod/apps/cellxgene/cellxgene-deployment.yaml: HTTP 404
+hasadna/hasadna-k8s/apps/openpension/templates/vertical-pod-autoscalers.yaml: HTTP 404
+hasadna/hasadna-k8s/apps/openpension/templates/ng-db-deployment.yaml: HTTP 404
+MaastrichtU-IDS/dsri-documentation/applications/templates/template-rstudio-root.yml: HTTP 404
+MaastrichtU-IDS/dsri-documentation/applications/templates/template-cellprofiler.yml: HTTP 404
+niklaushirt/ibm-aiops-deployer/Quick_Install/10_INSTALL_IBM_TURBONOMIC.yaml: HTTP 404
+wizelineacademy/Google-Africa-DEB/Capstone Project /gcp/nfs/nfs-server.yaml: URL can't contain control characters. '/wizelineacademy/Google-Africa-DEB/main/Capstone Project /gcp/nfs/nfs-server.yaml' (found at least ' ')
+acornsoft-edgecraft/edgecraft-carrier/22apps/dev group/spark/assets/spark-on-k8s-operator/charts/spark-operator-chart/templates/webhook-init-job.yaml: URL can't contain control characters. '/acornsoft-edgecraft/edgecraft-carrier/master/22apps/dev group/spark/assets/spark-on-k8s-operator/charts/spark-operator-chart/templates/webhook-init-job.yaml' (found at least ' ')
+acornsoft-edgecraft/edgecraft-carrier/22apps/dev group/gitlab/assets/gitlab/charts/nginx-ingress/templates/default-backend-psp.yaml: URL can't contain control characters. '/acornsoft-edgecraft/edgecraft-carrier/master/22apps/dev group/gitlab/assets/gitlab/charts/nginx-ingress/templates/default-backend-psp.yaml' (found at least ' ')
+acornsoft-edgecraft/edgecraft-carrier/22apps/monitoring group/consul/assets/consul/templates/server-acl-init-serviceaccount.yaml: URL can't contain control characters. '/acornsoft-edgecraft/edgecraft-carrier/master/22apps/monitoring group/consul/assets/consul/templates/server-acl-init-serviceaccount.yaml' (found at least ' ')
+acornsoft-edgecraft/edgecraft-carrier/22apps/core group/keycloak/assets/keycloak/templates/service-headless.yaml: URL can't contain control characters. '/acornsoft-edgecraft/edgecraft-carrier/master/22apps/core group/keycloak/assets/keycloak/templates/service-headless.yaml' (found at least ' ')
+acornsoft-edgecraft/edgecraft-carrier/22apps/monitoring group/jaeger/assets/jaeger/templates/agent-svc.yaml: URL can't contain control characters. '/acornsoft-edgecraft/edgecraft-carrier/master/22apps/monitoring group/jaeger/assets/jaeger/templates/agent-svc.yaml' (found at least ' ')
+acornsoft-edgecraft/edgecraft-carrier/22apps/monitoring group/prometheus+grafana/assets/kube-prometheus-stack/templates/prometheus/csi-secret.yaml: URL can't contain control characters. '/acornsoft-edgecraft/edgecraft-carrier/master/22apps/monitoring group/prometheus+grafana/assets/kube-prometheus-stack/templates/prometheus/csi-secret.yaml' (found at least ' ')
+awslabs/data-on-eks/data-stacks/spark-on-eks/benchmarks/datafusion-comet-benchmarks/tpcds-benchmark-357-template.yaml: HTTP 404
+onehouseinc/quanton-operator/charts/quanton-operator-chart/templates/dp-proxy-config.yaml: HTTP 404
+mlops-on-kubernetes/Book/Chapter 4/spark/spark-py-pi.yaml: URL can't contain control characters. '/mlops-on-kubernetes/Book/main/Chapter 4/spark/spark-py-pi.yaml' (found at least ' ')
+mlops-on-kubernetes/Book/Chapter 5/kubeflow/PyTorch/pytorch-mnist-ddp-gpu.yaml: URL can't contain control characters. '/mlops-on-kubernetes/Book/main/Chapter 5/kubeflow/PyTorch/pytorch-mnist-ddp-gpu.yaml' (found at least ' ')
+mlops-on-kubernetes/Book/Chapter 5/kubeflow/MPI/tensorflow-mpi.yaml: URL can't contain control characters. '/mlops-on-kubernetes/Book/main/Chapter 5/kubeflow/MPI/tensorflow-mpi.yaml' (found at least ' ')
+mlops-on-kubernetes/Book/Chapter 3/keycloak/gp3-sc.yaml: URL can't contain control characters. '/mlops-on-kubernetes/Book/main/Chapter 3/keycloak/gp3-sc.yaml' (found at least ' ')
+mlops-on-kubernetes/Book/Chapter 6/sample-rayjob.yaml: URL can't contain control characters. '/mlops-on-kubernetes/Book/main/Chapter 6/sample-rayjob.yaml' (found at least ' ')
+mlops-on-kubernetes/Book/Chapter 5/kubeflow/PyTorch/pytorch-mnist-ddp-cpu.yaml: URL can't contain control characters. '/mlops-on-kubernetes/Book/main/Chapter 5/kubeflow/PyTorch/pytorch-mnist-ddp-cpu.yaml' (found at least ' ')
+mlops-on-kubernetes/Book/Chapter 6/argo-workflows/aw-rayjob.yaml: URL can't contain control characters. '/mlops-on-kubernetes/Book/main/Chapter 6/argo-workflows/aw-rayjob.yaml' (found at least ' ')
+mlops-on-kubernetes/Book/Chapter 10/monitors/service-monitor.yaml: URL can't contain control characters. '/mlops-on-kubernetes/Book/main/Chapter 10/monitors/service-monitor.yaml' (found at least ' ')
+devzero-inc/zxporter/dist/metrics-server.yaml: HTTP 404
+aws-samples/appmod-blueprints/backstage/examples/template/content/catalog-info.yaml: HTTP 404
+aws-samples/appmod-blueprints/backstage/examples/templates/kro-job/content/resourcegroup.yaml: HTTP 404
+kubeflow/manifests/applications/volumes-web-app/upstream/base/cluster-role-binding.yaml: HTTP 404
+kubeflow/manifests/applications/profiles/upstream/rbac/leader_election_role.yaml: HTTP 404
+kubeflow/manifests/applications/jupyter/notebook-controller/upstream/rbac/role.yaml: HTTP 404
+kubeflow/manifests/applications/model-registry/upstream/base/kustomization.yaml: HTTP 404
+EOEPCA/eoepca-plus/argocd/eoepca/zoo-dru/app-zoo-dru.yaml: HTTP 404
+kubernetes-sigs/kueue/test/e2e/config/multikueue/patch_deployment.yaml: HTTP 404
+open-edge-platform/geti/interactive_ai/services/director/chart/templates/init-job.yaml: HTTP 404
+open-edge-platform/geti/deploy/charts/impt/chart/charts/spice-db/templates/deployment.yaml: HTTP 404
+open-edge-platform/geti/platform/services/platform_cleaner/chart/templates/cluster_role_binding.yaml: HTTP 404
+open-edge-platform/geti/deploy/charts/kubelet-csr-approver/chart/templates/deployment.yaml: HTTP 404
+open-edge-platform/geti/platform/services/observability/chart/templates/rate_limiter.yaml: HTTP 404
+open-edge-platform/geti/interactive_ai/services/visual_prompt/chart/templates/destination_rule.yaml: HTTP 404
+JamesBonddu/JsDu.io/编程语言/byzer-lang/templates/service.yaml: 'ascii' codec can't encode characters in position 32-35: ordinal not in range(128)
+JamesBonddu/JsDu.io/编程语言/byzer-lang/templates/serviceaccount.yaml: 'ascii' codec can't encode characters in position 32-35: ordinal not in range(128)
+JamesBonddu/JsDu.io/编程语言/byzer-lang/templates/configmap.yaml: 'ascii' codec can't encode characters in position 32-35: ordinal not in range(128)
+haicgu/training/Compute Continuum Workshop/hands-on/workflow-2/yaml/aggregator_cloud.yaml: URL can't contain control characters. '/haicgu/training/main/Compute Continuum Workshop/hands-on/workflow-2/yaml/aggregator_cloud.yaml' (found at least ' ')
+haicgu/training/Compute Continuum Workshop/hands-on/workflow-2/yaml/client.yaml: URL can't contain control characters. '/haicgu/training/main/Compute Continuum Workshop/hands-on/workflow-2/yaml/client.yaml' (found at least ' ')
+getindata/kedro-starters/getindata_kedro_starters/pyspark-iris-running-on-gke/{{ cookiecutter.repo_name }}/job.yaml: URL can't contain control characters. '/getindata/kedro-starters/develop/getindata_kedro_starters/pyspark-iris-running-on-gke/{{ cookiecutter.repo_name }}/job.yaml' (found at least ' ')
+komodorio/helm-charts/manifests/base/resourcequota.yaml: HTTP 404
+komodorio/helm-charts/manifests/base/deployment.yaml: HTTP 404
+portefaix/portefaix-kubernetes/gitops/fluxcd/kubernetes/base/cert-manager/cert-manager/kustomization.yaml: HTTP 404
+portefaix/portefaix-kubernetes/gitops/fluxcd/kubernetes/overlays/k3s/homelab/apigateway/contour/kustomization.yaml: HTTP 404
+portefaix/portefaix-kubernetes/gitops/fluxcd/kubernetes/base/identity/namespace/namespace.yaml: HTTP 404
+portefaix/portefaix-kubernetes/gitops/fluxcd/kubernetes/overlays/azure/dev/crossplane/crossplane/kustomization.yaml: HTTP 404
+portefaix/portefaix-kubernetes/gitops/fluxcd/kubernetes/overlays/k3s/cicd/ingress-controllers/ingress-nginx/kustomization.yaml: HTTP 404
+portefaix/portefaix-kubernetes/gitops/fluxcd/kubernetes/base/monitoring/kube-prometheus-stack/node-exporter-mixin.yaml: HTTP 404
+sahil-sharma/k8s-stuff/kafka-cluster/connect/connect-prometheus-rule.yaml: HTTP 404
+sahil-sharma/k8s-stuff/kafka-cluster/connect/connect.yaml: HTTP 404
+sahil-sharma/k8s-stuff/kafka-cluster/bridge/bridge-metrics-configmap.yaml: HTTP 404
+liferay/liferay-portal/cloud/helm/gcp-infrastructure-provider/compositions/30-k8s.yaml: HTTP 404
+liferay/liferay-portal/cloud/helm/gcp-infrastructure-provider/compositions/60-kms.yaml: HTTP 404
+traPtitech/manifest/anke-to-dev/deployment.yaml: HTTP 404
+traPtitech/manifest/monitor/pyroscope/ksops.yaml: HTTP 404
+mlrun/ce/charts/mlrun-ce/templates/config/model-monitoring-performance.yml: HTTP 404
+oracle/crossplane-provider-oci/examples-generated/networkconnectivity/v1alpha1/drg.yaml: HTTP 404
+oracle/crossplane-provider-oci/examples/stackmonitoring/monitoredresourcesassociatemonitoredresource.yaml: HTTP 404
+oracle/crossplane-provider-oci/examples/objectstorage/v1alpha1/bucket.yaml: HTTP 404
+oracle/crossplane-provider-oci/examples-generated/healthchecks/v1alpha1/httpmonitor.yaml: HTTP 404
+oracle/crossplane-provider-oci/examples-generated/database/v1alpha1/managementdbmanagementprivateendpoint.yaml: HTTP 404
+oracle/crossplane-provider-oci/examples-generated/networkconnectivity/v1alpha1/drgroutedistributionstatement.yaml: HTTP 404
+argoproj/argoproj-deployments/argocd/base/rollouts-extension.yaml: HTTP 404
+mckinsey/agents-at-scale-marketplace/mcps/perplexity-ask-mcp/k8s-deployment.yaml: HTTP 404
+truefoundry/infra-charts/charts/tfy-k8s-aws-eks-inframold/templates/kubecost.yaml: HTTP 404
+rackerlabs/understack/components/nautobot/servicemonitor-default.yaml: HTTP 404
+utilitywarehouse/system-manifests/pubsub/example-consume-process-batch/deployment.yaml: HTTP 404
+utilitywarehouse/system-manifests/pubsub/example-produce/deployment.yaml: HTTP 404
+mrled/psyops/seedboxk8s/applications/bridgetroll/IngressRoute.dex.yaml: HTTP 404
+adhar-io/adhar/platform/controlplane/configuration/providers/gcp-providerconfig.yaml: HTTP 404
+foalem/Pac-paper/policies/Kyverno OSS/awslabs__idf-modules/limit-hostpath-vols.yaml: URL can't contain control characters. '/foalem/Pac-paper/master/policies/Kyverno OSS/awslabs__idf-modules/limit-hostpath-vols.yaml' (found at least ' ')
+foalem/Pac-paper/policies/Kyverno OSS/kyverno__policies/verify-flux-images.yaml: URL can't contain control characters. '/foalem/Pac-paper/master/policies/Kyverno OSS/kyverno__policies/verify-flux-images.yaml' (found at least ' ')
+foalem/Pac-paper/data_analysis/policies/Kyverno OSS/nirmata__kyverno-policies/restrict-wildcard-resources.yaml: URL can't contain control characters. '/foalem/Pac-paper/master/data_analysis/policies/Kyverno OSS/nirmata__kyverno-policies/restrict-wildcard-resources.yaml' (found at least ' ')
+foalem/Pac-paper/data_analysis/policies/Kyverno OSS/kyverno__policies/k10-validate-ns-by-preset-label.yaml: URL can't contain control characters. '/foalem/Pac-paper/master/data_analysis/policies/Kyverno OSS/kyverno__policies/k10-validate-ns-by-preset-label.yaml' (found at least ' ')
+foalem/Pac-paper/policies/Kyverno OSS/nirmata__kyverno-policies/remediate-disallow-capabilities.yaml: URL can't contain control characters. '/foalem/Pac-paper/master/policies/Kyverno OSS/nirmata__kyverno-policies/remediate-disallow-capabilities.yaml' (found at least ' ')
+foalem/Pac-paper/data_analysis/policies/Kyverno OSS/kubearmor__KubeArmor/harden-trusted-cert-mod.yaml: URL can't contain control characters. '/foalem/Pac-paper/master/data_analysis/policies/Kyverno OSS/kubearmor__KubeArmor/harden-trusted-cert-mod.yaml' (found at least ' ')
+foalem/Pac-paper/data_analysis/policies/Kyverno OSS/h3mmy__bloopySphere/verify-tls-contains-host-path.yaml: URL can't contain control characters. '/foalem/Pac-paper/master/data_analysis/policies/Kyverno OSS/h3mmy__bloopySphere/verify-tls-contains-host-path.yaml' (found at least ' ')
+foalem/Pac-paper/data_analysis/policies/Kyverno OSS/deployKF__deployKF/clone-bucket-secret-clusterpolicy.yaml: URL can't contain control characters. '/foalem/Pac-paper/master/data_analysis/policies/Kyverno OSS/deployKF__deployKF/clone-bucket-secret-clusterpolicy.yaml' (found at least ' ')
+NetApp-Learning-Services/DataOps/Exercise 2/kubeflow-manifests-1.8.1/apps/kfp-tekton/upstream/v1/third-party/argo/upstream/manifests/cluster-install/workflow-controller-rbac/kustomization.yaml: URL can't contain control characters. '/NetApp-Learning-Services/DataOps/main/Exercise 2/kubeflow-manifests-1.8.1/apps/kfp-tekton/upstream/v1/third-party/argo/upstream/manifests/cluster-install/workflow-controller-rbac/kustomization.yaml' (found at least ' ')
+NetApp-Learning-Services/DataOps/Exercise 2/kubeflow-manifests-1.8.1/apps/kfp-tekton/upstream/base/pipeline/ml-pipeline-visualization-deployment.yaml: URL can't contain control characters. '/NetApp-Learning-Services/DataOps/main/Exercise 2/kubeflow-manifests-1.8.1/apps/kfp-tekton/upstream/base/pipeline/ml-pipeline-visualization-deployment.yaml' (found at least ' ')
+NetApp-Learning-Services/DataOps/Exercise 2/kubeflow-manifests-1.8.1/apps/volumes-web-app/upstream/base/cluster-role.yaml: URL can't contain control characters. '/NetApp-Learning-Services/DataOps/main/Exercise 2/kubeflow-manifests-1.8.1/apps/volumes-web-app/upstream/base/cluster-role.yaml' (found at least ' ')
+NetApp-Learning-Services/DataOps/Exercise 2/kubeflow-manifests-1.8.1/apps/kfp-tekton/upstream/v1/third-party/tekton-custom-task/pipeline-loops/500-controller.yaml: URL can't contain control characters. '/NetApp-Learning-Services/DataOps/main/Exercise 2/kubeflow-manifests-1.8.1/apps/kfp-tekton/upstream/v1/third-party/tekton-custom-task/pipeline-loops/500-controller.yaml' (found at least ' ')
+NetApp-Learning-Services/DataOps/Exercise 2/kubeflow-manifests-1.8.1/apps/kfp-tekton/upstream/base/metadata/options/istio/destination-rule.yaml: URL can't contain control characters. '/NetApp-Learning-Services/DataOps/main/Exercise 2/kubeflow-manifests-1.8.1/apps/kfp-tekton/upstream/base/metadata/options/istio/destination-rule.yaml' (found at least ' ')
+NetApp-Learning-Services/DataOps/Exercise 2/kubeflow-manifests-1.8.1/apps/pipeline/upstream/third-party/argo/upstream/manifests/quick-start/base/agent-default-rolebinding.yaml: URL can't contain control characters. '/NetApp-Learning-Services/DataOps/main/Exercise 2/kubeflow-manifests-1.8.1/apps/pipeline/upstream/third-party/argo/upstream/manifests/quick-start/base/agent-default-rolebinding.yaml' (found at least ' ')
+NetApp-Learning-Services/DataOps/Exercise 2/kubeflow-manifests-1.8.1/contrib/bentoml/deployment_from_bento.yaml: URL can't contain control characters. '/NetApp-Learning-Services/DataOps/main/Exercise 2/kubeflow-manifests-1.8.1/contrib/bentoml/deployment_from_bento.yaml' (found at least ' ')
+NetApp-Learning-Services/DataOps/Exercise 2/kubeflow-manifests-1.8.1/apps/kfp-tekton/upstream/base/installs/generic/postgres/kustomization.yaml: URL can't contain control characters. '/NetApp-Learning-Services/DataOps/main/Exercise 2/kubeflow-manifests-1.8.1/apps/kfp-tekton/upstream/base/installs/generic/postgres/kustomization.yaml' (found at least ' ')
+NetApp-Learning-Services/DataOps/Exercise 2/kubeflow-manifests-1.8.1/apps/pipeline/upstream/third-party/postgresql/base/pg-serviceaccount.yaml: URL can't contain control characters. '/NetApp-Learning-Services/DataOps/main/Exercise 2/kubeflow-manifests-1.8.1/apps/pipeline/upstream/third-party/postgresql/base/pg-serviceaccount.yaml' (found at least ' ')
+NetApp-Learning-Services/DataOps/Exercise 2/kubeflow-manifests-1.8.1/apps/kfp-tekton/upstream/v1/third-party/tekton-custom-task/pipeline-loops/201-role.yaml: URL can't contain control characters. '/NetApp-Learning-Services/DataOps/main/Exercise 2/kubeflow-manifests-1.8.1/apps/kfp-tekton/upstream/v1/third-party/tekton-custom-task/pipeline-loops/201-role.yaml' (found at least ' ')

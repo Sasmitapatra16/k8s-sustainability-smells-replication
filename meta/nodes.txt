@@ -1,0 +1,5 @@
+NAME           STATUS   ROLES    AGE    VERSION    INTERNAL-IP   EXTERNAL-IP   OS-IMAGE             KERNEL-VERSION      CONTAINER-RUNTIME
+k8s-master-1   Ready    <none>   182d   v1.33.13   10.2.0.145    <none>        Ubuntu 24.04.3 LTS   6.8.0-107-generic   containerd://1.7.29
+k8s-worker-1   Ready    <none>   182d   v1.33.9    10.2.0.131    <none>        Ubuntu 24.04.3 LTS   6.8.0-71-generic    containerd://1.7.27
+k8s-worker-2   Ready    <none>   182d   v1.33.9    10.2.0.132    <none>        Ubuntu 24.04.3 LTS   6.8.0-71-generic    containerd://1.7.27
+k8s-worker-3   Ready    <none>   182d   v1.33.9    10.2.0.133    <none>        Ubuntu 24.04.3 LTS   6.8.0-71-generic    containerd://1.7.27

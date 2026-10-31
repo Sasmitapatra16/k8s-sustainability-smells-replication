@@ -1,0 +1,5 @@
+stage-ingestion-2km9c   0/1   Completed   0     23s   10.1.140.17   k8s-worker-2   <none>   <none>
+stage-cleaning-5mp8f   0/1   Completed   0     23s   10.1.140.18   k8s-worker-2   <none>   <none>
+stage-integration-jqsxl   0/1   Completed   0     24s   10.1.140.20   k8s-worker-2   <none>   <none>
+stage-transformation-2lmpl   0/1   Completed   0     24s   10.1.140.34   k8s-worker-2   <none>   <none>
+stage-loading-vffth   0/1   Completed   0     24s   10.1.140.30   k8s-worker-2   <none>   <none>

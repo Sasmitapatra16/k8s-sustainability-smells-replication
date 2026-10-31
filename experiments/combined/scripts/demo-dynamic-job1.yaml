@@ -1,0 +1,30 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: demo-dynamic-n-test1
+spec:
+  backoffLimit: 0
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+      - name: demo
+        image: 10.2.0.145:32000/etl-pipeline:latest
+        imagePullPolicy: IfNotPresent
+        command: ["python3", "-u", "/scripts/prepare_chunks_dynamic_demo.py"]
+        env:
+        - name: AWS_ENDPOINT_URL
+          value: "http://localstack.default.svc.cluster.local:4566"
+        - name: SRC_KEY
+          value: "input.csv"
+        - name: TARGET_PARTITION_SIZE
+          value: "20000"
+        - name: KEY_PREFIX
+          value: "demo50k"
+        volumeMounts:
+        - name: scripts
+          mountPath: /scripts
+      volumes:
+      - name: scripts
+        configMap:
+          name: chunk-demo-scripts

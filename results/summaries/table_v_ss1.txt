@@ -1,0 +1,4 @@
+config                     mode          runs   podMAX_s   podSUM_s      CPU_s   memMiB
+ss1_over                   ss1_over         5      68.27      68.27      29.42      227
+ss1_right                  ss1_right        5      68.79      68.79      30.16      227
+ss1_unbounded              ss1_unbounded     5      68.97      68.97      30.24      227

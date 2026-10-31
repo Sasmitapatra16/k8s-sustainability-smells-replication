@@ -1,0 +1,15 @@
+stage-ingestion-0-bk4qr   0/1   Completed   0     45s   10.1.140.63   k8s-worker-2   <none>   <none>
+stage-ingestion-1-lf9sz   0/1   Completed   0     45s   10.1.230.18   k8s-worker-1   <none>   <none>
+stage-ingestion-2-45b22   0/1   Completed   0     45s   10.1.69.235   k8s-worker-3   <none>   <none>
+stage-cleaning-0-jdsw9   0/1   Completed   0     47s   10.1.69.195   k8s-worker-3   <none>   <none>
+stage-cleaning-1-4ngw7   0/1   Completed   0     47s   10.1.230.36   k8s-worker-1   <none>   <none>
+stage-cleaning-2-n26xx   0/1   Completed   0     47s   10.1.140.46   k8s-worker-2   <none>   <none>
+stage-integration-0-4xk7f   0/1   Completed   0     63s   10.1.140.1    k8s-worker-2   <none>   <none>
+stage-integration-1-4b548   0/1   Completed   0     63s   10.1.69.255   k8s-worker-3   <none>   <none>
+stage-integration-2-5l4sg   0/1   Completed   0     63s   10.1.230.40   k8s-worker-1   <none>   <none>
+stage-transformation-0-69zgw   0/1   Completed   0     49s   10.1.69.198   k8s-worker-3   <none>   <none>
+stage-transformation-1-2nsnk   0/1   Completed   0     49s   10.1.196.12   k8s-master-1   <none>   <none>
+stage-transformation-2-fw7ms   0/1   Completed   0     49s   10.1.140.8    k8s-worker-2   <none>   <none>
+stage-loading-0-m46hf   0/1   Completed   0     49s   10.1.69.218   k8s-worker-3   <none>   <none>
+stage-loading-1-7j2cv   0/1   Completed   0     49s   10.1.140.41   k8s-worker-2   <none>   <none>
+stage-loading-2-sk8p8   0/1   Completed   0     49s   10.1.230.9    k8s-worker-1   <none>   <none>

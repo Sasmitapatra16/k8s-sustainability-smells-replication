@@ -1,0 +1,319 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: stage-ingestion
+  namespace: etl-ingestion
+spec:
+  completionMode: Indexed
+  parallelism: 3
+  completions: 3
+  ttlSecondsAfterFinished: 120
+  template:
+    metadata:
+      labels:
+        app: etl-refactored
+        stage: ingestion
+    spec:
+      restartPolicy: Never
+      affinity:
+        podAntiAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+          - labelSelector:
+              matchLabels:
+                app: etl-refactored
+                stage: ingestion
+            topologyKey: kubernetes.io/hostname
+      containers:
+        - name: ingestion
+          image: 10.2.0.145:32000/etl-pipeline:latest
+          imagePullPolicy: IfNotPresent
+          command: ["python3", "-u", "/scripts/stage_unified.py"]
+          env:
+            - name: PIPELINE_STAGE
+              value: "ingestion"
+            - name: INTENSITY
+              value: "150"
+            - name: AWS_ENDPOINT_URL
+              value: "http://localstack.default.svc.cluster.local:4566"
+            - name: LOG_LEVEL
+              value: "INFO"
+            - name: VERBOSE_PRINT
+              value: "false"
+            - name: SMELL_MODE
+              value: "refactored"
+            - name: TRACK_STATE
+              value: "true"
+            - name: RUN_ID
+              value: "refactored-001"
+            - name: PARALLELISM
+              value: "3"
+          resources:
+            requests:
+              cpu: "200m"
+              memory: "256Mi"
+            limits:
+              cpu: "400m"
+              memory: "512Mi"
+          volumeMounts:
+            - name: scripts
+              mountPath: /scripts
+      volumes:
+        - name: scripts
+          configMap:
+            name: stage-unified-scripts-v2
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: stage-integration
+  namespace: etl-integration
+spec:
+  completionMode: Indexed
+  parallelism: 3
+  completions: 3
+  ttlSecondsAfterFinished: 120
+  template:
+    metadata:
+      labels:
+        app: etl-refactored
+        stage: integration
+    spec:
+      restartPolicy: Never
+      affinity:
+        podAntiAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+          - labelSelector:
+              matchLabels:
+                app: etl-refactored
+                stage: integration
+            topologyKey: kubernetes.io/hostname
+      containers:
+        - name: integration
+          image: 10.2.0.145:32000/etl-pipeline:latest
+          imagePullPolicy: IfNotPresent
+          command: ["python3", "-u", "/scripts/stage_unified.py"]
+          env:
+            - name: PIPELINE_STAGE
+              value: "integration"
+            - name: INTENSITY
+              value: "150"
+            - name: AWS_ENDPOINT_URL
+              value: "http://localstack.default.svc.cluster.local:4566"
+            - name: LOG_LEVEL
+              value: "INFO"
+            - name: VERBOSE_PRINT
+              value: "false"
+            - name: SMELL_MODE
+              value: "refactored"
+            - name: TRACK_STATE
+              value: "true"
+            - name: RUN_ID
+              value: "refactored-001"
+            - name: PARALLELISM
+              value: "3"
+          resources:
+            requests:
+              cpu: "200m"
+              memory: "256Mi"
+            limits:
+              cpu: "400m"
+              memory: "512Mi"
+          volumeMounts:
+            - name: scripts
+              mountPath: /scripts
+      volumes:
+        - name: scripts
+          configMap:
+            name: stage-unified-scripts-v2
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: stage-cleaning
+  namespace: etl-cleaning
+spec:
+  completionMode: Indexed
+  parallelism: 3
+  completions: 3
+  ttlSecondsAfterFinished: 120
+  template:
+    metadata:
+      labels:
+        app: etl-refactored
+        stage: cleaning
+    spec:
+      restartPolicy: Never
+      affinity:
+        podAntiAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+          - labelSelector:
+              matchLabels:
+                app: etl-refactored
+                stage: cleaning
+            topologyKey: kubernetes.io/hostname
+      containers:
+        - name: cleaning
+          image: 10.2.0.145:32000/etl-pipeline:latest
+          imagePullPolicy: IfNotPresent
+          command: ["python3", "-u", "/scripts/stage_unified.py"]
+          env:
+            - name: PIPELINE_STAGE
+              value: "cleaning"
+            - name: INTENSITY
+              value: "150"
+            - name: AWS_ENDPOINT_URL
+              value: "http://localstack.default.svc.cluster.local:4566"
+            - name: LOG_LEVEL
+              value: "INFO"
+            - name: VERBOSE_PRINT
+              value: "false"
+            - name: SMELL_MODE
+              value: "refactored"
+            - name: TRACK_STATE
+              value: "true"
+            - name: RUN_ID
+              value: "refactored-001"
+            - name: PARALLELISM
+              value: "3"
+          resources:
+            requests:
+              cpu: "200m"
+              memory: "256Mi"
+            limits:
+              cpu: "400m"
+              memory: "512Mi"
+          volumeMounts:
+            - name: scripts
+              mountPath: /scripts
+      volumes:
+        - name: scripts
+          configMap:
+            name: stage-unified-scripts-v2
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: stage-transformation
+  namespace: etl-transformation
+spec:
+  completionMode: Indexed
+  parallelism: 3
+  completions: 3
+  ttlSecondsAfterFinished: 120
+  template:
+    metadata:
+      labels:
+        app: etl-refactored
+        stage: transformation
+    spec:
+      restartPolicy: Never
+      affinity:
+        podAntiAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+          - labelSelector:
+              matchLabels:
+                app: etl-refactored
+                stage: transformation
+            topologyKey: kubernetes.io/hostname
+      containers:
+        - name: transformation
+          image: 10.2.0.145:32000/etl-pipeline:latest
+          imagePullPolicy: IfNotPresent
+          command: ["python3", "-u", "/scripts/stage_unified.py"]
+          env:
+            - name: PIPELINE_STAGE
+              value: "transformation"
+            - name: INTENSITY
+              value: "150"
+            - name: AWS_ENDPOINT_URL
+              value: "http://localstack.default.svc.cluster.local:4566"
+            - name: LOG_LEVEL
+              value: "INFO"
+            - name: VERBOSE_PRINT
+              value: "false"
+            - name: SMELL_MODE
+              value: "refactored"
+            - name: TRACK_STATE
+              value: "true"
+            - name: RUN_ID
+              value: "refactored-001"
+            - name: PARALLELISM
+              value: "3"
+          resources:
+            requests:
+              cpu: "200m"
+              memory: "256Mi"
+            limits:
+              cpu: "400m"
+              memory: "512Mi"
+          volumeMounts:
+            - name: scripts
+              mountPath: /scripts
+      volumes:
+        - name: scripts
+          configMap:
+            name: stage-unified-scripts-v2
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: stage-loading
+  namespace: etl-loading
+spec:
+  completionMode: Indexed
+  parallelism: 3
+  completions: 3
+  ttlSecondsAfterFinished: 120
+  template:
+    metadata:
+      labels:
+        app: etl-refactored
+        stage: loading
+    spec:
+      restartPolicy: Never
+      affinity:
+        podAntiAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+          - labelSelector:
+              matchLabels:
+                app: etl-refactored
+                stage: loading
+            topologyKey: kubernetes.io/hostname
+      containers:
+        - name: loading
+          image: 10.2.0.145:32000/etl-pipeline:latest
+          imagePullPolicy: IfNotPresent
+          command: ["python3", "-u", "/scripts/stage_unified.py"]
+          env:
+            - name: PIPELINE_STAGE
+              value: "loading"
+            - name: INTENSITY
+              value: "150"
+            - name: AWS_ENDPOINT_URL
+              value: "http://localstack.default.svc.cluster.local:4566"
+            - name: LOG_LEVEL
+              value: "INFO"
+            - name: VERBOSE_PRINT
+              value: "false"
+            - name: SMELL_MODE
+              value: "refactored"
+            - name: TRACK_STATE
+              value: "true"
+            - name: RUN_ID
+              value: "refactored-001"
+            - name: PARALLELISM
+              value: "3"
+          resources:
+            requests:
+              cpu: "200m"
+              memory: "256Mi"
+            limits:
+              cpu: "400m"
+              memory: "512Mi"
+          volumeMounts:
+            - name: scripts
+              mountPath: /scripts
+      volumes:
+        - name: scripts
+          configMap:
+            name: stage-unified-scripts-v2

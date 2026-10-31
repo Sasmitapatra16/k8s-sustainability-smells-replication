@@ -1,0 +1,7 @@
+config                     mode          runs   podMAX_s   podSUM_s      CPU_s   memMiB
+smelly-s10000              smelly           5      44.74      44.74       6.61        0
+smelly-s200000             smelly           5     177.00     177.00     136.59        0
+smelly-s50000              smelly           5      68.86      68.86      30.15        0
+ss2-s10000                 ss2              5      54.34     162.45      12.28        0
+ss2-s200000                ss2              5     100.40     298.34     144.70        0
+ss2-s50000                 ss2              5      62.09     185.39      34.39        0

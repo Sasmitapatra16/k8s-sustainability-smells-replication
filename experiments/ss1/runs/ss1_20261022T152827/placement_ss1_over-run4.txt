@@ -1,0 +1,5 @@
+stage-ingestion-65slb   0/1   Completed   0     24s   10.1.140.2   k8s-worker-2   <none>   <none>
+stage-cleaning-425vl   0/1   Completed   0     23s   10.1.140.5   k8s-worker-2   <none>   <none>
+stage-integration-cx4mt   0/1   Completed   0     25s   10.1.140.7   k8s-worker-2   <none>   <none>
+stage-transformation-j6skg   0/1   Completed   0     24s   10.1.140.33   k8s-worker-2   <none>   <none>
+stage-loading-nw45x   0/1   Completed   0     23s   10.1.140.56   k8s-worker-2   <none>   <none>

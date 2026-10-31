@@ -1,0 +1,15 @@
+stage-ingestion-0-cwbx5   0/1   Completed   0     46s   10.1.69.246   k8s-worker-3   <none>   <none>
+stage-ingestion-1-rk4z2   0/1   Completed   0     46s   10.1.196.63   k8s-master-1   <none>   <none>
+stage-ingestion-2-tdqfc   0/1   Completed   0     46s   10.1.140.18   k8s-worker-2   <none>   <none>
+stage-cleaning-0-r5vr2   0/1   Completed   0     48s   10.1.140.20   k8s-worker-2   <none>   <none>
+stage-cleaning-1-8gj5m   0/1   Completed   0     48s   10.1.69.221   k8s-worker-3   <none>   <none>
+stage-cleaning-2-q89g8   0/1   Completed   0     48s   10.1.196.14   k8s-master-1   <none>   <none>
+stage-integration-0-nrb7j   0/1   Completed   0     62s   10.1.140.34   k8s-worker-2   <none>   <none>
+stage-integration-1-r6k4l   0/1   Completed   0     62s   10.1.196.21   k8s-master-1   <none>   <none>
+stage-integration-2-4cv6q   0/1   Completed   0     62s   10.1.69.207   k8s-worker-3   <none>   <none>
+stage-transformation-0-fpt64   0/1   Completed   0     47s   10.1.140.30   k8s-worker-2   <none>   <none>
+stage-transformation-1-dk6kz   0/1   Completed   0     47s   10.1.196.49   k8s-master-1   <none>   <none>
+stage-transformation-2-xnphk   0/1   Completed   0     47s   10.1.69.245   k8s-worker-3   <none>   <none>
+stage-loading-0-tf68b   0/1   Completed   0     49s   10.1.69.222   k8s-worker-3   <none>   <none>
+stage-loading-1-dfpdk   0/1   Completed   0     49s   10.1.196.31   k8s-master-1   <none>   <none>
+stage-loading-2-wfzxw   0/1   Completed   0     49s   10.1.140.50   k8s-worker-2   <none>   <none>

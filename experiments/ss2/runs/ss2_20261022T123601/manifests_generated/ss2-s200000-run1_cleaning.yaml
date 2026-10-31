@@ -1,0 +1,55 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: stage-cleaning
+  namespace: etl-smelly
+spec:
+  completionMode: Indexed
+  parallelism: 3
+  completions: 3
+  template:
+    metadata:
+      labels:
+        app: etl-smelly
+        stage: cleaning
+    spec:
+      restartPolicy: Never
+      affinity:
+        podAntiAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+          - labelSelector:
+              matchLabels:
+                app: etl-smelly
+                stage: cleaning
+            topologyKey: kubernetes.io/hostname
+      containers:
+        - name: cleaning
+          image: 10.2.0.145:32000/etl-pipeline:latest
+          imagePullPolicy: IfNotPresent
+          command: ["python3", "-u", "/scripts/stage_unified.py"]
+          env:
+            - name: PIPELINE_STAGE
+              value: "cleaning"
+            - name: INTENSITY
+              value: "150"
+            - name: AWS_ENDPOINT_URL
+              value: "http://localstack.default.svc.cluster.local:4566"
+            - name: LOG_LEVEL
+              value: "DEBUG"
+            - name: VERBOSE_PRINT
+              value: "true"
+            - name: SMELL_MODE
+              value: "ss2"
+            - name: TRACK_STATE
+              value: "false"
+            - name: RUN_ID
+              value: "ss2-s200000-run1"
+            - name: PARALLELISM
+              value: "3"
+          volumeMounts:
+            - name: scripts
+              mountPath: /scripts
+      volumes:
+        - name: scripts
+          configMap:
+            name: stage-unified-scripts-v2

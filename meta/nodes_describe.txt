@@ -1,0 +1,315 @@
+Name:               k8s-master-1
+Roles:              <none>
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/os=linux
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=k8s-master-1
+                    kubernetes.io/os=linux
+                    microk8s.io/cluster=true
+                    node.kubernetes.io/microk8s-controlplane=microk8s-controlplane
+Annotations:        node.alpha.kubernetes.io/ttl: 0
+                    projectcalico.org/IPv4Address: 10.2.0.145/24
+                    projectcalico.org/IPv4VXLANTunnelAddr: 10.1.196.0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Mon, 20 Apr 2026 15:29:49 +0000
+Taints:             <none>
+Unschedulable:      false
+Lease:
+  HolderIdentity:  k8s-master-1
+  AcquireTime:     <unset>
+  RenewTime:       Mon, 19 Oct 2026 15:46:34 +0000
+Conditions:
+  Type                 Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----                 ------  -----------------                 ------------------                ------                       -------
+  NetworkUnavailable   False   Sat, 03 Oct 2026 11:07:40 +0000   Sat, 03 Oct 2026 11:07:40 +0000   CalicoIsUp                   Calico is running on this node
+  MemoryPressure       False   Mon, 19 Oct 2026 15:43:26 +0000   Tue, 01 Sep 2026 12:17:47 +0000   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure         False   Mon, 19 Oct 2026 15:43:26 +0000   Tue, 01 Sep 2026 12:17:47 +0000   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure          False   Mon, 19 Oct 2026 15:43:26 +0000   Tue, 01 Sep 2026 12:17:47 +0000   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready                True    Mon, 19 Oct 2026 15:43:26 +0000   Tue, 01 Sep 2026 12:17:47 +0000   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:  10.2.0.145
+  Hostname:    k8s-master-1
+Capacity:
+  cpu:                24
+  ephemeral-storage:  913805600Ki
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             65825532Ki
+  pods:               110
+Allocatable:
+  cpu:                24
+  ephemeral-storage:  912757024Ki
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             65723132Ki
+  pods:               110
+System Info:
+  Machine ID:                 59099a57239f45659c43cc2de5ab9048
+  System UUID:                00000000-0000-0000-0000-0cc47a861580
+  Boot ID:                    ff259cf6-33e7-4597-b52c-e84d0ab3c083
+  Kernel Version:             6.8.0-107-generic
+  OS Image:                   Ubuntu 24.04.3 LTS
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  containerd://1.7.29
+  Kubelet Version:            v1.33.13
+  Kube-Proxy Version:         
+Non-terminated Pods:          (9 in total)
+  Namespace                   Name                                              CPU Requests  CPU Limits  Memory Requests  Memory Limits  Age
+  ---------                   ----                                              ------------  ----------  ---------------  -------------  ---
+  default                     localstack-68fb67f945-8t6b9                       0 (0%)        0 (0%)      0 (0%)           0 (0%)         170d
+  default                     prometheus-6bdcd959cc-sn8dl                       0 (0%)        0 (0%)      0 (0%)           0 (0%)         130d
+  kube-system                 calico-kube-controllers-79949b87d-rmsqg           0 (0%)        0 (0%)      0 (0%)           0 (0%)         182d
+  kube-system                 calico-node-mn22j                                 250m (1%)     0 (0%)      0 (0%)           0 (0%)         95d
+  kube-system                 coredns-ccd8f67bc-bmpvh                           100m (0%)     0 (0%)      70Mi (0%)        170Mi (0%)     182d
+  kube-system                 hostpath-provisioner-c778b7559-n649h              0 (0%)        0 (0%)      0 (0%)           0 (0%)         182d
+  network-migration           baseline-nginx-7c55dd6b4d-qqvg7                   0 (0%)        0 (0%)      0 (0%)           0 (0%)         10d
+  observability               kube-prom-stack-prometheus-node-exporter-l6bfq    0 (0%)        0 (0%)      0 (0%)           0 (0%)         129d
+  observability               loki-promtail-7fwbz                               0 (0%)        0 (0%)      0 (0%)           0 (0%)         129d
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests   Limits
+  --------           --------   ------
+  cpu                350m (1%)  0 (0%)
+  memory             70Mi (0%)  170Mi (0%)
+  ephemeral-storage  0 (0%)     0 (0%)
+  hugepages-1Gi      0 (0%)     0 (0%)
+  hugepages-2Mi      0 (0%)     0 (0%)
+Events:              <none>
+
+
+Name:               k8s-worker-1
+Roles:              <none>
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/os=linux
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=k8s-worker-1
+                    kubernetes.io/os=linux
+                    microk8s.io/cluster=true
+                    node.kubernetes.io/microk8s-worker=microk8s-worker
+Annotations:        node.alpha.kubernetes.io/ttl: 0
+                    projectcalico.org/IPv4Address: 10.2.0.131/24
+                    projectcalico.org/IPv4VXLANTunnelAddr: 10.1.230.0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Mon, 20 Apr 2026 15:35:24 +0000
+Taints:             <none>
+Unschedulable:      false
+Lease:
+  HolderIdentity:  k8s-worker-1
+  AcquireTime:     <unset>
+  RenewTime:       Mon, 19 Oct 2026 15:46:15 +0000
+Conditions:
+  Type                 Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----                 ------  -----------------                 ------------------                ------                       -------
+  NetworkUnavailable   False   Mon, 20 Apr 2026 15:35:05 +0000   Mon, 20 Apr 2026 15:35:05 +0000   CalicoIsUp                   Calico is running on this node
+  MemoryPressure       False   Mon, 19 Oct 2026 15:41:37 +0000   Tue, 01 Sep 2026 12:17:28 +0000   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure         False   Mon, 19 Oct 2026 15:41:37 +0000   Tue, 01 Sep 2026 12:17:28 +0000   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure          False   Mon, 19 Oct 2026 15:41:37 +0000   Tue, 01 Sep 2026 12:17:28 +0000   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready                True    Mon, 19 Oct 2026 15:41:37 +0000   Tue, 01 Sep 2026 12:17:28 +0000   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:  10.2.0.131
+  Hostname:    k8s-worker-1
+Capacity:
+  cpu:                24
+  ephemeral-storage:  913805600Ki
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             65825768Ki
+  pods:               110
+Allocatable:
+  cpu:                24
+  ephemeral-storage:  912757024Ki
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             65723368Ki
+  pods:               110
+System Info:
+  Machine ID:                 610f91ba0fec45fdb3455be012a3128e
+  System UUID:                00000000-0000-0000-0000-0cc47a86157a
+  Boot ID:                    05cc5769-9a31-4db2-af7b-9f2232ab09ae
+  Kernel Version:             6.8.0-71-generic
+  OS Image:                   Ubuntu 24.04.3 LTS
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  containerd://1.7.27
+  Kubelet Version:            v1.33.9
+  Kube-Proxy Version:         
+Non-terminated Pods:          (11 in total)
+  Namespace                   Name                                              CPU Requests  CPU Limits  Memory Requests  Memory Limits  Age
+  ---------                   ----                                              ------------  ----------  ---------------  -------------  ---
+  default                     nginx                                             0 (0%)        0 (0%)      0 (0%)           0 (0%)         9d
+  kube-system                 calico-node-fq7k8                                 250m (1%)     0 (0%)      0 (0%)           0 (0%)         182d
+  kube-system                 hostpath-provisioner-k8s-worker-1-fptrg           15m (0%)      100m (0%)   16Mi (0%)        64Mi (0%)      179d
+  kube-system                 hostpath-provisioner-k8s-worker-1-kclmw           15m (0%)      100m (0%)   16Mi (0%)        64Mi (0%)      179d
+  kube-system                 hostpath-provisioner-k8s-worker-1-kp6qj           15m (0%)      100m (0%)   16Mi (0%)        64Mi (0%)      179d
+  kube-system                 hostpath-provisioner-k8s-worker-1-qcbgh           15m (0%)      100m (0%)   16Mi (0%)        64Mi (0%)      179d
+  kube-system                 metrics-server-5fb64b6fd7-pncnp                   100m (0%)     0 (0%)      200Mi (0%)       0 (0%)         174d
+  observability               kube-prom-stack-grafana-69d45887b7-v699d          0 (0%)        0 (0%)      0 (0%)           0 (0%)         129d
+  observability               kube-prom-stack-prometheus-node-exporter-758mv    0 (0%)        0 (0%)      0 (0%)           0 (0%)         129d
+  observability               loki-promtail-xb72t                               0 (0%)        0 (0%)      0 (0%)           0 (0%)         129d
+  observability               tempo-0                                           0 (0%)        0 (0%)      0 (0%)           0 (0%)         129d
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests    Limits
+  --------           --------    ------
+  cpu                410m (1%)   400m (1%)
+  memory             264Mi (0%)  256Mi (0%)
+  ephemeral-storage  0 (0%)      0 (0%)
+  hugepages-1Gi      0 (0%)      0 (0%)
+  hugepages-2Mi      0 (0%)      0 (0%)
+Events:              <none>
+
+
+Name:               k8s-worker-2
+Roles:              <none>
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/os=linux
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=k8s-worker-2
+                    kubernetes.io/os=linux
+                    microk8s.io/cluster=true
+                    node.kubernetes.io/microk8s-worker=microk8s-worker
+Annotations:        node.alpha.kubernetes.io/ttl: 0
+                    projectcalico.org/IPv4Address: 10.2.0.132/24
+                    projectcalico.org/IPv4VXLANTunnelAddr: 10.1.140.0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Mon, 20 Apr 2026 15:37:13 +0000
+Taints:             <none>
+Unschedulable:      false
+Lease:
+  HolderIdentity:  k8s-worker-2
+  AcquireTime:     <unset>
+  RenewTime:       Mon, 19 Oct 2026 15:45:41 +0000
+Conditions:
+  Type                 Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----                 ------  -----------------                 ------------------                ------                       -------
+  NetworkUnavailable   False   Mon, 20 Apr 2026 15:36:47 +0000   Mon, 20 Apr 2026 15:36:47 +0000   CalicoIsUp                   Calico is running on this node
+  MemoryPressure       False   Mon, 19 Oct 2026 15:44:13 +0000   Tue, 01 Sep 2026 12:16:49 +0000   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure         False   Mon, 19 Oct 2026 15:44:13 +0000   Tue, 01 Sep 2026 12:16:49 +0000   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure          False   Mon, 19 Oct 2026 15:44:13 +0000   Tue, 01 Sep 2026 12:16:49 +0000   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready                True    Mon, 19 Oct 2026 15:44:13 +0000   Tue, 01 Sep 2026 12:16:49 +0000   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:  10.2.0.132
+  Hostname:    k8s-worker-2
+Capacity:
+  cpu:                24
+  ephemeral-storage:  913805600Ki
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             65825560Ki
+  pods:               110
+Allocatable:
+  cpu:                24
+  ephemeral-storage:  912757024Ki
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             65723160Ki
+  pods:               110
+System Info:
+  Machine ID:                 b89feb65cef4469c881d0e0b44be20e0
+  System UUID:                00000000-0000-0000-0000-0cc47a861570
+  Boot ID:                    f8cffced-9161-4c34-9efd-1d27b4bce10c
+  Kernel Version:             6.8.0-71-generic
+  OS Image:                   Ubuntu 24.04.3 LTS
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  containerd://1.7.27
+  Kubelet Version:            v1.33.9
+  Kube-Proxy Version:         
+Non-terminated Pods:          (6 in total)
+  Namespace                   Name                                              CPU Requests  CPU Limits  Memory Requests  Memory Limits  Age
+  ---------                   ----                                              ------------  ----------  ---------------  -------------  ---
+  container-registry          registry-6cf7b9fcc-2dlf4                          0 (0%)        0 (0%)      0 (0%)           0 (0%)         179d
+  default                     curl-test                                         0 (0%)        0 (0%)      0 (0%)           0 (0%)         144d
+  kube-system                 calico-node-zz9fw                                 250m (1%)     0 (0%)      0 (0%)           0 (0%)         182d
+  network-migration           baseline-nginx-7c55dd6b4d-fbwd4                   0 (0%)        0 (0%)      0 (0%)           0 (0%)         10d
+  observability               kube-prom-stack-prometheus-node-exporter-lfz5r    0 (0%)        0 (0%)      0 (0%)           0 (0%)         129d
+  observability               loki-promtail-phm9c                               0 (0%)        0 (0%)      0 (0%)           0 (0%)         129d
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests   Limits
+  --------           --------   ------
+  cpu                250m (1%)  0 (0%)
+  memory             0 (0%)     0 (0%)
+  ephemeral-storage  0 (0%)     0 (0%)
+  hugepages-1Gi      0 (0%)     0 (0%)
+  hugepages-2Mi      0 (0%)     0 (0%)
+Events:              <none>
+
+
+Name:               k8s-worker-3
+Roles:              <none>
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/os=linux
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=k8s-worker-3
+                    kubernetes.io/os=linux
+                    microk8s.io/cluster=true
+                    node.kubernetes.io/microk8s-worker=microk8s-worker
+Annotations:        node.alpha.kubernetes.io/ttl: 0
+                    projectcalico.org/IPv4Address: 10.2.0.133/24
+                    projectcalico.org/IPv4VXLANTunnelAddr: 10.1.69.192
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Mon, 20 Apr 2026 15:34:14 +0000
+Taints:             <none>
+Unschedulable:      false
+Lease:
+  HolderIdentity:  k8s-worker-3
+  AcquireTime:     <unset>
+  RenewTime:       Mon, 19 Oct 2026 15:49:17 +0000
+Conditions:
+  Type                 Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----                 ------  -----------------                 ------------------                ------                       -------
+  NetworkUnavailable   False   Mon, 20 Apr 2026 15:34:24 +0000   Mon, 20 Apr 2026 15:34:24 +0000   CalicoIsUp                   Calico is running on this node
+  MemoryPressure       False   Mon, 19 Oct 2026 15:44:41 +0000   Tue, 01 Sep 2026 12:19:35 +0000   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure         False   Mon, 19 Oct 2026 15:44:41 +0000   Tue, 01 Sep 2026 12:19:35 +0000   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure          False   Mon, 19 Oct 2026 15:44:41 +0000   Tue, 01 Sep 2026 12:19:35 +0000   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready                True    Mon, 19 Oct 2026 15:44:41 +0000   Tue, 01 Sep 2026 12:19:35 +0000   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:  10.2.0.133
+  Hostname:    k8s-worker-3
+Capacity:
+  cpu:                24
+  ephemeral-storage:  913805600Ki
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             65825892Ki
+  pods:               110
+Allocatable:
+  cpu:                24
+  ephemeral-storage:  912757024Ki
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             65723492Ki
+  pods:               110
+System Info:
+  Machine ID:                 c01b5f93080f4d6c86a2c5a90c9c43ce
+  System UUID:                00000000-0000-0000-0000-0cc47a861474
+  Boot ID:                    93b4dd2c-bd18-4841-af99-b8fea987e970
+  Kernel Version:             6.8.0-71-generic
+  OS Image:                   Ubuntu 24.04.3 LTS
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  containerd://1.7.27
+  Kubelet Version:            v1.33.9
+  Kube-Proxy Version:         
+Non-terminated Pods:          (7 in total)
+  Namespace                   Name                                                   CPU Requests  CPU Limits  Memory Requests  Memory Limits  Age
+  ---------                   ----                                                   ------------  ----------  ---------------  -------------  ---
+  default                     prometheus-adapter-65d7698bb8-mmwpj                    0 (0%)        0 (0%)      0 (0%)           0 (0%)         141d
+  kube-system                 calico-node-wtfgl                                      250m (1%)     0 (0%)      0 (0%)           0 (0%)         182d
+  observability               kube-prom-stack-kube-prome-operator-c54b6d4dc-tgb5h    0 (0%)        0 (0%)      0 (0%)           0 (0%)         129d
+  observability               kube-prom-stack-kube-state-metrics-546b64cfdb-tf6bl    0 (0%)        0 (0%)      0 (0%)           0 (0%)         129d
+  observability               kube-prom-stack-prometheus-node-exporter-w2k4c         0 (0%)        0 (0%)      0 (0%)           0 (0%)         129d
+  observability               loki-0                                                 0 (0%)        0 (0%)      0 (0%)           0 (0%)         129d
+  observability               loki-promtail-mhn67                                    0 (0%)        0 (0%)      0 (0%)           0 (0%)         129d
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests   Limits
+  --------           --------   ------
+  cpu                250m (1%)  0 (0%)
+  memory             0 (0%)     0 (0%)
+  ephemeral-storage  0 (0%)     0 (0%)
+  hugepages-1Gi      0 (0%)     0 (0%)
+  hugepages-2Mi      0 (0%)     0 (0%)
+Events:              <none>

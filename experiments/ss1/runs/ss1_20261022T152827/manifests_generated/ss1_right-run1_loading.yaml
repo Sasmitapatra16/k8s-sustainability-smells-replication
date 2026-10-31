@@ -1,0 +1,51 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: stage-loading
+  namespace: etl-smelly
+spec:
+  parallelism: 1
+  completions: 1
+  template:
+    metadata:
+      labels:
+        app: etl-smelly
+        stage: loading
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: loading
+          image: 10.2.0.145:32000/etl-pipeline:latest
+          imagePullPolicy: IfNotPresent
+          command: ["python3", "-u", "/scripts/stage_unified.py"]
+          env:
+            - name: PIPELINE_STAGE
+              value: "loading"
+            - name: INTENSITY
+              value: "150"
+            - name: AWS_ENDPOINT_URL
+              value: "http://localstack.default.svc.cluster.local:4566"
+            - name: LOG_LEVEL
+              value: "DEBUG"
+            - name: VERBOSE_PRINT
+              value: "true"
+            - name: SMELL_MODE
+              value: "ss1_right"
+            - name: TRACK_STATE
+              value: "false"
+            - name: RUN_ID
+              value: "ss1_right-run1"
+          resources:
+            requests:
+              cpu: "500m"
+              memory: "256Mi"
+            limits:
+              cpu: "1000m"
+              memory: "512Mi"
+          volumeMounts:
+            - name: scripts
+              mountPath: /scripts
+      volumes:
+        - name: scripts
+          configMap:
+            name: stage-unified-scripts-v2

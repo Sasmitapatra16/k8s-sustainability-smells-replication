@@ -1,0 +1,5 @@
+stage-ingestion-rtblf   0/1   Completed   0     40s   10.1.196.48   k8s-master-1   <none>   <none>
+stage-cleaning-dq5r5   0/1   Completed   0     40s   10.1.230.48   k8s-worker-1   <none>   <none>
+stage-integration-vbqll   0/1   Completed   0     68s   10.1.140.10   k8s-worker-2   <none>   <none>
+stage-transformation-rcnz7   0/1   Completed   0     42s   10.1.140.42   k8s-worker-2   <none>   <none>
+stage-loading-85h77   0/1   Completed   0     44s   10.1.230.6   k8s-worker-1   <none>   <none>

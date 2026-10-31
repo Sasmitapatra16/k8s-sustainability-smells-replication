@@ -1,0 +1,26 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: prepare-chunks-v2
+spec:
+  backoffLimit: 0
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+      - name: prep
+        image: 10.2.0.145:32000/etl-pipeline:latest
+        imagePullPolicy: IfNotPresent
+        command: ["python3", "/scripts/prepare_chunks_v2.py"]
+        env:
+        - name: AWS_ENDPOINT_URL
+          value: "http://localstack.default.svc.cluster.local:4566"
+        - name: CHUNKS
+          value: "3"
+        volumeMounts:
+        - name: scripts
+          mountPath: /scripts
+      volumes:
+      - name: scripts
+        configMap:
+          name: chunk-prep-scripts

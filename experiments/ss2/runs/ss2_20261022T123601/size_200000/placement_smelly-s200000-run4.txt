@@ -1,0 +1,5 @@
+stage-ingestion-zsfxv   0/1   Completed   0     36s   10.1.69.233   k8s-worker-3   <none>   <none>
+stage-cleaning-pndw8   0/1   Completed   0     40s   10.1.69.210   k8s-worker-3   <none>   <none>
+stage-integration-f4ht7   0/1   Completed   0     67s   10.1.230.38   k8s-worker-1   <none>   <none>
+stage-transformation-9jdff   0/1   Completed   0     41s   10.1.230.20   k8s-worker-1   <none>   <none>
+stage-loading-cfj8l   0/1   Completed   0     44s   10.1.230.45   k8s-worker-1   <none>   <none>

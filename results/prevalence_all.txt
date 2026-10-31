@@ -1,0 +1,42 @@
+corpus files: 3084
+
+smell  flagged  applic.  %applic. %allfiles
+SS1         47      417    11.27%     1.52%
+SS2         34      442     7.69%     1.10%
+SS3         71       79    89.87%     2.30%
+SS4          2      742     0.27%     0.06%
+SS5         76      517    14.70%     2.46%
+SS6         41       65    63.08%     1.33%
+SS7         69     1635     4.22%     2.24%
+any smell (union): 296 files = 9.60% of 3084
+any smell excluding SS1: 271
+
+repositories with >=1 retrieved file: 473 of 480
+smell repos_flagged repos_applic.   %applic.
+SS1             34          185     18.38%
+SS2             28          230     12.17%
+SS3             55           62     88.71%
+SS4              2          318      0.63%
+SS5             58          255     22.75%
+SS6             29           48     60.42%
+SS7             48          362     13.26%
+repos with any smell: 179 of 473 = 37.84%
+
+star-threshold sensitivity (files flagged / files in corpus at that threshold)
+>=stars   repos  files     SS1     SS2     SS3     SS4     SS5     SS6     SS7     any
+2           473   3084   1.52%   1.10%   2.30%   0.06%   2.46%   1.33%   2.24%   9.60%
+5           325   2079   1.35%   1.01%   2.41%   0.10%   2.12%   0.96%   2.60%   9.52%
+10          224   1412   0.92%   0.85%   2.55%   0.07%   2.20%   1.06%   2.20%   9.07%
+50          105    618   0.65%   0.49%   2.10%   0.00%   1.94%   0.32%   3.40%   8.41%
+100          74    434   0.69%   0.46%   2.30%   0.00%   1.84%   0.46%   3.92%   9.22%
+
+repositories whose retrieved files mention each tool anywhere:
+  airflow   145
+  argo      172
+  kubeflow  38
+  spark     125
+  prefect   1
+  dagster   0
+repositories mentioning none of them: 86
+
+per-file flags written to ./per_file_flags.csv

@@ -1,0 +1,8 @@
+Stage              Smelly   Refact-MAX   Refact-SUM
+ingestion          12.44s       24.48s       72.60s
+cleaning           13.17s       26.02s       77.09s
+integration        14.91s       41.69s      123.77s
+transformation     13.61s       27.03s       80.04s
+loading            14.17s       27.85s       82.22s
+TOTAL              68.30s      147.07s      435.71s
+ratios: MAX/smelly 2.15  SUM/smelly 6.38

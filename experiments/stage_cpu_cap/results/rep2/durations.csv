@@ -1,0 +1,8 @@
+run,smell,duration_ms
+A_baseline,none,674550
+B_smell_ingestion,ingestion,610677
+C_smell_cleaning,cleaning,584177
+D_smell_integration,integration,579587
+E_smell_transformation,transformation,572177
+F_smell_loading,loading,564395
+G_refactored,none,674786
